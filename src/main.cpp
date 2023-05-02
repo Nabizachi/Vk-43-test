@@ -112,14 +112,13 @@ void loop()
 
   // ***--- SENSOR BUTTONS ---*** //
 
-  /*
-  Serial.print("SW1 =  ");
+    Serial.print("SW1 =  ");
   Serial.println(digitalRead(SW1));
   Serial.print("SW2 =  ");
   Serial.println(digitalRead(SW2));
   Serial.print("SW3 =  ");
   Serial.println(digitalRead(SW3));
-  */
+  delay(1000);
 
   // ***--- LEDS ---*** //
 
@@ -158,7 +157,7 @@ void loop()
 
   // ***--- DS18B20 ---*** //
 
-  sensor.requestTemperatures();
-  Serial.println(sensor.getTempC());
-  delay(1000);
+  // sensor.requestTemperatures();
+  // Serial.println(sensor.getTempC());
+  // delay(1000);
 }
