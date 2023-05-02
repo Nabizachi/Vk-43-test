@@ -92,11 +92,6 @@ void loop()
   digitalWrite(Stepper_MC, 1);
   digitalWrite(Stepper_MD, 1);
   delay(5);
-
-  digitalWrite(LEDS, 1);
-  delay(1000);
-  digitalWrite(LEDS, 0);
-  delay(1000);
   */
 
   // ***--- COLD/HOT_Relay ---*** //
@@ -112,7 +107,7 @@ void loop()
 
   // ***--- SENSOR BUTTONS ---*** //
 
-    Serial.print("SW1 =  ");
+  Serial.print("SW1 =  ");
   Serial.println(digitalRead(SW1));
   Serial.print("SW2 =  ");
   Serial.println(digitalRead(SW2));
